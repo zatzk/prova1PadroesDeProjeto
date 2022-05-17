@@ -40,5 +40,4 @@ public class DadosEquipamento {
     this.idetificador = idetificador;
   }
   
-  
 }
