@@ -7,11 +7,12 @@ public class DadosEquipamento {
   private String tipo;
   private String marca;
   private String idetificador;
+
+
+
   public String getNome() {
     return nome;
   }
-
-  
   public void setNome(String nome) {
     this.nome = nome;
   }
