@@ -7,6 +7,7 @@ public class DadosEquipamento {
   private String tipo;
   private String marca;
   private String idetificador;
+  private String TesteCommit;
 
 
 
