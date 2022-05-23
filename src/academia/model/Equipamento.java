@@ -29,10 +29,16 @@ public abstract class Equipamento {
   }
   
   public Equipamento(String identificador, int quantidade, TipoEquipamento tipoeEquipamento) {
+    super();
     this.identificador = identificador;
     this.quantidade = quantidade;
     this.tipoeEquipamento = tipoeEquipamento;
   }
+  @Override
+  public String toString() {
+    return "Equipamento [identificador=" + identificador + ", quantidade=" + quantidade + ", tipoeEquipamento="
+        + tipoeEquipamento + "]";
+  }
   
-     
+    
 }

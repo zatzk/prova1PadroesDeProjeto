@@ -19,6 +19,11 @@ public class Acessorios extends Equipamento {
         Descricao = descricao;
     }
 
+    @Override
+    public String toString() {
+      return "Acessorios [Descricao=" + Descricao + "]";
+    }
+
     
 
 }

@@ -19,5 +19,10 @@ public class Halteres extends Equipamento{
         this.peso = peso;
     }
 
+    @Override
+    public String toString() {
+      return "Halteres [peso=" + peso + "]";
+    }
+
     
 }

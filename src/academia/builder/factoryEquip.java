@@ -1,22 +1,20 @@
 package academia.builder;
 
-import academia.model.Acessorios;
-import academia.model.Equipamento;
-import academia.model.Halteres;
-import academia.model.Maquinas;
+import academia.fm.TipoEquipamento;
+import academia.model.*;
 
 public class factoryEquip {
   
-  public static Equipamento getEquipamento(String tipoEquipamento, String identificador, int quantidade, String descricao) {
+  public static Equipamento getEquipamento(String tipoEquipamento, String identificador, int quantidade, String descricao , String marca, double peso, TipoEquipamento tipoeEquipamento) {
     
     if(tipoEquipamento.equals("halteres")) {
-      return new Halteres(identificador, quantidade, quantidade, null);
+      return new Halteres(identificador, quantidade, peso, TipoEquipamento.HALTERES);
     }
     else if(tipoEquipamento.equals("acessorios")) {
-      return new Acessorios(identificador, quantidade, descricao, null);
+      return new Acessorios(identificador, quantidade, descricao, TipoEquipamento.ACESSORIOS);
     }
     else if(tipoEquipamento.equals("maquina")) {
-      return new Maquinas(identificador, quantidade, descricao, descricao, null);
+      return new Maquinas(identificador, quantidade, marca, descricao, TipoEquipamento.MAQUINAS);
     }
     else {
       return null;
