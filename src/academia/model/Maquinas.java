@@ -1,5 +1,7 @@
 package academia.model;
 
+import academia.fm.TipoEquipamento;
+
 public class Maquinas extends Equipamento{
     
     private String descricao;
@@ -26,6 +28,15 @@ public class Maquinas extends Equipamento{
         super(identificador, quantidade);
         this.descricao = descricao;
         this.marca = marca;
+    }
+
+    public Maquinas(String identificador, int quantidade) {
+        super(identificador, quantidade);
+    }
+
+    @Override
+    public String toString() {
+        return "Maquinas [descricao=" + descricao + ", marca=" + marca + super.toString() +"]";
     }
 
     
