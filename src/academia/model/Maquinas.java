@@ -1,9 +1,10 @@
 package academia.model;
 
+import academia.fm.TipoEquipamento;
+
 public class Maquinas extends Equipamento{
     
     private String descricao;
-
     private String marca;
 
     public String getDescricao() {
@@ -22,8 +23,8 @@ public class Maquinas extends Equipamento{
         this.marca = marca;
     }
 
-    public Maquinas(String identificador, int quantidade, String descricao, String marca) {
-        super(identificador, quantidade);
+    public Maquinas(String identificador, int quantidade, String descricao, String marca, TipoEquipamento tipoeEquipamento) {
+        super(identificador, quantidade, TipoEquipamento.MAQUINAS);
         this.descricao = descricao;
         this.marca = marca;
     }

@@ -1,5 +1,7 @@
 package academia.model;
 
+import academia.fm.TipoEquipamento;
+
 public class Halteres extends Equipamento{
     
     private double peso;
@@ -12,8 +14,8 @@ public class Halteres extends Equipamento{
         this.peso = peso;
     }
 
-    public Halteres(String identificador, int quantidade, double peso) {
-        super(identificador, quantidade);
+    public Halteres(String identificador, int quantidade, double peso, TipoEquipamento tipoeEquipamento) {
+        super(identificador, quantidade, TipoEquipamento.HALTERES);
         this.peso = peso;
     }
 
