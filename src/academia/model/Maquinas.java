@@ -31,7 +31,7 @@ public class Maquinas extends Equipamento{
 
     @Override
     public String toString() {
-      return "Maquinas [identificador=" + getIdentificador() + ",quantidade=" + getQuantidade() + ", tipoEquipamento=" + getTipoeEquipamento() + ", descricao=" + descricao + ", marca=" + marca + "]";
+      return "Maquinas [identificador=" + getIdentificador() + ", quantidade=" + getQuantidade() + ", tipoEquipamento=" + getTipoeEquipamento() + ", descricao=" + descricao + ", marca=" + marca + "]";
     }
 
     

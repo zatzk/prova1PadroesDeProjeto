@@ -21,7 +21,7 @@ public class Acessorios extends Equipamento {
 
     @Override
     public String toString() {
-      return "Acessorios [Descricao=" + Descricao + "]";
+      return "Acessorios [identificador=" + getIdentificador() + ", quantidade=" + getQuantidade() + ", tipoEquipamento=" + getTipoeEquipamento() + ", Descricao=" + Descricao + "]";
     }
 
     
