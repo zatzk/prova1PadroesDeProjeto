@@ -1,8 +1,7 @@
 package academia.fm;
 
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
-import java.util.List;
+
 
 import academia.model.Equipamento;
 

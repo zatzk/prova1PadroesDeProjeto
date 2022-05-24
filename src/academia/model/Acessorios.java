@@ -1,6 +1,5 @@
 package academia.model;
 
-import academia.fm.TipoEquipamento;
 
 public class Acessorios extends Equipamento{
     
@@ -14,8 +13,8 @@ public class Acessorios extends Equipamento{
         Descricao = descricao;
     }
 
-    public Acessorios(String identificador, int quantidade, String descricao, TipoEquipamento tipoeEquipamento) {
-        super(identificador, quantidade, TipoEquipamento.ACESSORIOS);
+    public Acessorios(String identificador, int quantidade, String descricao) {
+        super(identificador, quantidade);
         Descricao = descricao;
     }
 
