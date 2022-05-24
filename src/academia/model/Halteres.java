@@ -19,10 +19,13 @@ public class Halteres extends Equipamento{
         this.peso = peso;
     }
 
-    @Override
-    public String toString() {
-      return "Halteres [identificador=" + getIdentificador() + ", quantidade=" + getQuantidade() + ", tipoEquipamento=" + getTipoeEquipamento() + ", peso=" + peso + "]";
+    public Halteres(String identificador, int quantidade){
+        super(identificador, quantidade);
     }
 
+    @Override
+    public String toString() {
+        return "Halteres [peso=" + peso + super.toString() +"]";
+    }
     
 }

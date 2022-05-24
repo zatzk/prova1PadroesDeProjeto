@@ -1,5 +1,4 @@
 package academia.model;
-
 import academia.fm.TipoEquipamento;
 
 public abstract class Equipamento {
@@ -36,9 +35,8 @@ public abstract class Equipamento {
   }
   @Override
   public String toString() {
-    return "Equipamento [identificador=" + identificador + ", quantidade=" + quantidade + ", tipoeEquipamento="
-        + tipoeEquipamento + "]";
+    return "Equipamento [identificador=" + identificador + ", quantidade=" + quantidade + super.toString() +"]";
   }
+     
   
-    
 }

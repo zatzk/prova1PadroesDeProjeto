@@ -2,7 +2,7 @@ package academia.model;
 
 import academia.fm.TipoEquipamento;
 
-public class Acessorios extends Equipamento {
+public class Acessorios extends Equipamento{
     
     private String Descricao;
 
@@ -19,11 +19,13 @@ public class Acessorios extends Equipamento {
         Descricao = descricao;
     }
 
-    @Override
-    public String toString() {
-      return "Acessorios [identificador=" + getIdentificador() + ", quantidade=" + getQuantidade() + ", tipoEquipamento=" + getTipoeEquipamento() + ", Descricao=" + Descricao + "]";
+    public Acessorios(String identificador, int quantidade) {
+        super(identificador, quantidade);        
     }
 
-    
+    @Override
+    public String toString() {
+        return "Acessorios [Descricao=" + Descricao +" "+ super.toString()+" "+ "]";
+    }
 
 }

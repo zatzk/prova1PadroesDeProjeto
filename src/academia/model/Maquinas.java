@@ -29,9 +29,13 @@ public class Maquinas extends Equipamento{
         this.marca = marca;
     }
 
+    public Maquinas(String identificador, int quantidade) {
+        super(identificador, quantidade);
+    }
+
     @Override
     public String toString() {
-      return "Maquinas [identificador=" + getIdentificador() + ", quantidade=" + getQuantidade() + ", tipoEquipamento=" + getTipoeEquipamento() + ", descricao=" + descricao + ", marca=" + marca + "]";
+        return "Maquinas [descricao=" + descricao + ", marca=" + marca + super.toString() +"]";
     }
 
     
