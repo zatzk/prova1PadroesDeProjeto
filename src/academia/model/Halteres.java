@@ -1,4 +1,6 @@
-package academia;
+package academia.model;
+
+import academia.prototype.Equipamento;
 
 public class Halteres implements Equipamento {
 
@@ -12,6 +14,16 @@ public class Halteres implements Equipamento {
   public int quantidade() {
     // TODO Auto-generated method stub
     return 0;
+  }
+  public int peso;
+
+//getters and setters
+  public int getPeso() {
+    return peso;
+  }
+
+  public void setPeso(int peso) {
+    this.peso = peso;
   }
    
   

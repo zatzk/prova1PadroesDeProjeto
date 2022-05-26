@@ -1,4 +1,4 @@
-package academia;
+package academia.prototype;
 
 public interface Equipamento {
   String identificador();

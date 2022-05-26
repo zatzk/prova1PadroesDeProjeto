@@ -1,19 +1,21 @@
-package academia;
+package academia.model;
 
-public class Maquinas implements Equipamento {
+import academia.prototype.Equipamento;
+
+public class Acessorios implements Equipamento {
+
   @Override
   public String identificador() {
     // TODO Auto-generated method stub
     return null;
   }
+
   @Override
   public int quantidade() {
     // TODO Auto-generated method stub
     return 0;
   }
   public String descricao;
-  public String marca;
-
 
   //getters and setters
   public String getDescricao() {
@@ -22,15 +24,6 @@ public class Maquinas implements Equipamento {
   public void setDescricao(String descricao) {
     this.descricao = descricao;
   }
-  public String getMarca() {
-    return marca;
-  }
-  public void setMarca(String marca) {
-    this.marca = marca;
-  }
 
-  
 
-  
-  
 }
