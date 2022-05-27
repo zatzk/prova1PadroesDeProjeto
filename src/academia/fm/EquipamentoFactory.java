@@ -2,8 +2,6 @@ package academia.fm;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
-import java.util.List;
 
 import academia.model.Equipamento;
 import academia.properties.PropertiesFileReading;

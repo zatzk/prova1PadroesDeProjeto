@@ -1,9 +1,8 @@
 package academia;
 
 import academia.fm.EquipamentoFactory;
-import academia.fm.TipoEquipamento;
 import academia.model.Equipamento;
-import academia.properties.PropertiesFileReading;
+
 
 public class Aplicacao {
     public static void main(String[] args) throws Exception {
