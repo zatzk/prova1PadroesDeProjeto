@@ -12,8 +12,9 @@ public class Aplicacao {
         Equipamento equipamento3 = EquipamentoFactory.novoEquipamento("Halteres", "Anilha F18", 3);
         Equipamento equipamento4 = EquipamentoFactory.novoEquipamento("Maquinas", "Supino Kikos BRS206", 8);
         Equipamento equipamento5 = EquipamentoFactory.novoEquipamento("Maquinas", "Supino Kikos BRS206", 3);
-        Equipamento equipamento6 = EquipamentoFactory.novoEquipamento("Acessorios", "Pilates 25L", 3);
-        Equipamento equipamento7 = EquipamentoFactory.novoEquipamento("Acessorios", "Pilates 25L", 10);
+        Equipamento equipamento6 = EquipamentoFactory.novoEquipamento("Maquinas", "Supino Kikos BRS206", 1);
+        Equipamento equipamento7 = EquipamentoFactory.novoEquipamento("Acessorios", "Pilates 25L", 3);
+        Equipamento equipamento8 = EquipamentoFactory.novoEquipamento("Acessorios", "Pilates 25L", 10);
 
         System.out.println(equipamento1);
         System.out.println(equipamento2);
@@ -22,6 +23,7 @@ public class Aplicacao {
         System.out.println(equipamento5);
         System.out.println(equipamento6);
         System.out.println(equipamento7);
+        System.out.println(equipamento8);
 
     }
 }

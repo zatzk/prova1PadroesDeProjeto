@@ -18,6 +18,9 @@ public abstract class Equipamento {
   public void setQuantidade(int quantidade) {
     this.quantidade = quantidade;
   }
+  public void adiconarQtd(int quantidade){
+    this.quantidade += quantidade;
+  }
 
   public Equipamento(String identificador, int quantidade) {
     this.identificador = identificador;

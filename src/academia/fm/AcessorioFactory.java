@@ -7,21 +7,13 @@ import academia.model.Acessorios;
 
 public class AcessorioFactory extends EquipamentoFactory{
     
-    private String identificador;
-    private int quantidade;
-
-    private List<Acessorios> acessoriosCriados  = new ArrayList<Acessorios>();   
+    private static List<Acessorios> acessoriosCriados  = new ArrayList<Acessorios>();   
 
     @Override
     public Acessorios createEquipamento(String identificador, int quantidade) {   
-        this.identificador = identificador;
-        this.quantidade = quantidade;
-        System.out.println(this.identificador);
-        System.out.println(this.quantidade);
-       
         for(Acessorios acess: acessoriosCriados){
-            if(acess.getIdentificador().equals(this.identificador)){
-                acess.setQuantidade(quantidade + this.quantidade);
+            if(acess.getIdentificador().equals(identificador)){
+                acess.adiconarQtd(quantidade);
                 return acess;                
             }
         }
