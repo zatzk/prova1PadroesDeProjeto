@@ -1,5 +1,5 @@
 package academia.model;
-import academia.fm.TipoEquipamento;
+
 
 public abstract class Equipamento {
 

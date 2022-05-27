@@ -1,6 +1,6 @@
 package academia.model;
 
-import academia.fm.TipoEquipamento;
+
 
 public class Acessorios extends Equipamento{
     
