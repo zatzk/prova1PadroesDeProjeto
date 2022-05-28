@@ -1,12 +1,21 @@
 package academia;
 
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+
+import academia.builder.ExercicioBuilder;
 import academia.fm.EquipamentoFactory;
 import academia.model.Equipamento;
+import academia.model.TipoExercicio;
 
 
 public class Aplicacao {
-    public static void main(String[] args) throws Exception {
-           
+    public static void main(String[] args) throws Exception {           
+        //quest1();
+        quest2();
+    }
+
+    private static void quest1() throws InstantiationException, IllegalAccessException, ClassNotFoundException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException, IOException {
         Equipamento equipamento1 = EquipamentoFactory.novoEquipamento("Halteres", "Anilha F18", 3);
         Equipamento equipamento2 = EquipamentoFactory.novoEquipamento("Halteres", "Anilha F18", 3);
         Equipamento equipamento3 = EquipamentoFactory.novoEquipamento("Halteres", "Anilha F18", 3);
@@ -24,6 +33,13 @@ public class Aplicacao {
         System.out.println(equipamento6);
         System.out.println(equipamento7);
         System.out.println(equipamento8);
+    }
+
+    private static void quest2() {
+        /*TipoExercicio manopla = new ExercicioBuilder("Levantamento de peso")
+                gruposMusculares("pernas", "coxas")                                                                        
+
+                .categoria(TipoExercicio.Mobilidade, TipoExercicio.Cardiovascular)*/
 
     }
 }
