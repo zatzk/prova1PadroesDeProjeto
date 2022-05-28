@@ -1,7 +1,7 @@
 package academia.model;
 
 
-public abstract class Equipamento {
+public class Equipamento {
 
   private String identificador;
   private int quantidade;
