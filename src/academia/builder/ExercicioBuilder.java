@@ -12,33 +12,30 @@ public class ExercicioBuilder {
     private String nome;
     //Opcionais
     
-    private ArrayList<TipoExercicio> categoria = new ArrayList<>();
-    private List<String> gruposMusculares;
-    private List<Equipamento> equipamentosUltilizados;
-
+    private List<TipoExercicio> categoria = new ArrayList<>();
+    private List<String> gruposMusculares = new ArrayList<>();
+    private List<Equipamento> equipamentosUltilizados = new ArrayList<>();;
+    
     public ExercicioBuilder(String nome){
         this.nome = nome;
     }
 
-    public ExercicioBuilder categoria(ArrayList<TipoExercicio> categoria){      
-        for(TipoExercicio tpex : categoria){
-            categoria.add(tpex);
-        }  
-        this.categoria = categoria;
+    public ExercicioBuilder categoria(TipoExercicio categoria){      
+        this.categoria.add(categoria);        
         return this;
     }
 
-    public ExercicioBuilder gruposMusculares(List<String> gruposMusculares){
-        this.gruposMusculares = gruposMusculares;
+    public ExercicioBuilder gruposMusculares (String gruposMusculares){
+        this.gruposMusculares.add(gruposMusculares);
         return this;
     }
 
-    public ExercicioBuilder equipamentosUltilizados(List<Equipamento> equipamentosUltilizados){
-        this.equipamentosUltilizados = equipamentosUltilizados;
+    public ExercicioBuilder equipamentosUltilizados(Equipamento equipamentosUltilizados){
+        this.equipamentosUltilizados.add(equipamentosUltilizados);
         return this;
     }
 
-    public Exercicio criarTipoExercio() {
+    public Exercicio builder() {
 		return new Exercicio(nome, categoria, gruposMusculares, equipamentosUltilizados);
 	}
 }

@@ -26,6 +26,7 @@ public class Equipamento {
     this.identificador = identificador;
     this.quantidade = quantidade;
   }
+  
   @Override
   public String toString() {
     return "Equipamento [identificador=" + identificador + ", quantidade=" + quantidade + super.toString() +"]";

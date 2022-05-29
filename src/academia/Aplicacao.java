@@ -6,6 +6,7 @@ import java.lang.reflect.InvocationTargetException;
 import academia.builder.ExercicioBuilder;
 import academia.fm.EquipamentoFactory;
 import academia.model.Equipamento;
+import academia.model.Exercicio;
 import academia.model.TipoExercicio;
 
 
@@ -35,11 +36,19 @@ public class Aplicacao {
         System.out.println(equipamento8);
     }
 
-    private static void quest2() {
-        /*TipoExercicio manopla = new ExercicioBuilder("Levantamento de peso")
-                gruposMusculares("pernas", "coxas")                                                                        
-
-                .categoria(TipoExercicio.Mobilidade, TipoExercicio.Cardiovascular)*/
-
+    private static void quest2() throws InstantiationException, IllegalAccessException, ClassNotFoundException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException, IOException {
+            
+            Equipamento equipamento1 = EquipamentoFactory.novoEquipamento("Halteres", "Anilha F18", 3);
+            
+            Exercicio manopla = new ExercicioBuilder("Levantamento de peso")    
+            .gruposMusculares("pernas")
+            .gruposMusculares("coxas")
+            .categoria(TipoExercicio.Cardiovascular)
+            .categoria(TipoExercicio.Funcional)
+            .equipamentosUltilizados(equipamento1)
+            .builder();
+            
+            System.out.println(manopla);
+                                
     }
 }
