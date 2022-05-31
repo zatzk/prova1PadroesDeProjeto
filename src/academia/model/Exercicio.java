@@ -52,8 +52,8 @@ public class Exercicio {
 
     @Override
     public String toString() {
-        return "Exercicio [categoria=" + categoria + ", equipamentosUltilizados=" + equipamentosUltilizados
-                + ", gruposMusculares=" + gruposMusculares + ", nome=" + nome + "]";
+        return "Nome Exercicio = " + nome + "\nExercicio [categoria=" + categoria + ", \nEquipamentosUltilizados=" + equipamentosUltilizados
+                + ", \nGruposMusculares=" + gruposMusculares + "]";
     }
 
 }

@@ -29,7 +29,7 @@ public class Equipamento {
   
   @Override
   public String toString() {
-    return "Equipamento [identificador=" + identificador + ", quantidade=" + quantidade + super.toString() +"]";
+    return "Equipamento [identificador=" + identificador + ", quantidade=" + quantidade + " " +super.toString() +"]";
   }
      
   
